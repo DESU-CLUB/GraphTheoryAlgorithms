@@ -1,0 +1,57 @@
+Common Problems in Graph Theory
+
+Quick qns to ask when designing graphs
+Is graph directed/undirected?
+Are edges weighted?
+Is graph sparse/dense
+Which structure to repr graphs?
+
+
+Common Problems
+Shortest Path Problem
+    Given weighted graph, find shortest path from A to B
+Algorithms
+BFS (unweighted), Djikstra's, Bellman-Ford, Floyd-Warshall, A*, etc
+
+Connectivity Problem: Is there path from A to B?
+Solutions: Union find data structure/ any search algo
+
+Negative Cycles:
+    Weighted digraph have any neg cycles and where
+Algo: Bellman-Ford, Floyd-Warshall
+
+Can use in currency markets, arbritage
+
+Strongly connected components: SCC are self contained cycles where
+    every vertex in given cycle can reach other vertex in same cycle
+
+Algorithms: Tarjan'sand Kosaraju's Algorithms
+
+Travelling Salesman: Shortest route to visit all cities exactly once
+NP-Hard: Computationally challenging Problem
+
+Algorithm -> Held-Karp, branch and bound, many approximtion algos: Ant Colony
+
+Finding Bridges: finding cut edges
+Impt as they hint at weak points, bottlenecks or vulns
+
+Articulation pointd -> finding cut vertices
+Impt as they hint at weak points, bottlenecks or vulns
+
+Minimum Spanning Tree: subset of edges of connected edge weighted graph
+that connect all vertices together, acyclic with min possible total edge weighted
+
+Kruskal, Prim's and Boruvka's algo
+
+MSTS on a graph are not always unique
+
+Applications: Design least cost network, circuit designing
+
+Network flow: max flow
+
+Edge weight represents capacities
+
+Qn: How much flow can we push through network
+
+Algo-> Ford-Fulkerson, Edmonds-Karp, Dinic's Algo
+

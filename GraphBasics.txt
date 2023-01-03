@@ -1,0 +1,81 @@
+#Graphs are versatile, can use to model problems
+#allows us to visualise problem and relations using nodes and edges
+#Different types of graphs
+'''
+Undirected graph -> edges have no orientation
+Directed graphs (Digraphs) -> Directed edges
+Weighted graphs -> edges with weighs to repr values
+|_ can be directed/undirected
+
+notation for tutorial
+u,v,w-> from, to, weight
+
+Special graphs
+-> Trees : Undirected graph, acyclic
+N nodes, n-1 edges
+
+-> Rooted tree
+Designated root node -> edges point toward/away from root
+
+if point away, rooted tree known as arborescence (out-tree)
+if point towards, known as anti-arborescence (in tree)
+
+Directed Acyclic Graphs -> Directed graphs with no cycles
+
+Bipartite Graph: vertices can be split  into  two independent groups
+-> Common problem is matching for bipartite graph
+-> network flow
+
+Complete graph: Unique edge between every pair of nodes
+'''
+
+#Representing graphs
+'''
+Adjacency Matrix
+
+ A B C D
+A 0 0 0 0
+B 0 0 0 0 
+C 0 0 0 0
+D 0 0 0 0
+NODE GOING TO ITSELF HAS COST OF 0
+A TO B REPRESENTS THE WEIGHT OF GOING TO NODE B FROM A
+
+PROS
+Space efficient for dense graphs
+Edge weight lookup is O(1)
+Simplest graph representation
+
+CONS
+Requires O(V^2) space
+Iterating over all edges takes O(V^2) time
+
+Adjacency List
+A -> [(B,4),(C,1)] ##LIST CONTAINS PATH TO OTHER NODES AND WEIGHTS
+B -> [(C,6)]
+C -> [ (A,4),(B,1),(D,2)]
+
+Pros
+Space efficient for sparse graphs -> only allocates memory to relations used in graph
+Iterating over all edges to remove add edge is efficient
+
+Cons
+Less space efficient
+Edge weight lookup is O(E), E = no of edges
+Slightly more complex graph repr
+
+Edge List
+unordered list of edges
+[(C,A,4),(A,C,1)]- > shows going from, going to and weight
+
+PROS
+Space efficient for sparse graphs
+Iterating over all edges is efficient
+Simple structure
+
+CONS
+Less space efficient for dense graphs
+Edge weight lookup is O(E)
+
+
+'''
