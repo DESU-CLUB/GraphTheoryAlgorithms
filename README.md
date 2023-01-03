@@ -7,6 +7,9 @@ Implementations of basic graph theory algorithms in Python 3.7
 - Djikstra's Algorithm
 - Bellman-Ford
 - Floyd-Warshall
+- Topological Sort
+- Shortest and longest path in a Directed Acyclic Graph
+- Finding bridges and articulation points
 - Kosaraju's Algorithm
 - Tarjan's Algorithm
 - Travelling Salesman Problem
