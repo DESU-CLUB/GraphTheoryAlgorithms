@@ -4,7 +4,7 @@ Implementations of basic graph theory algorithms in Python 3.7
 ## Contains
 - Depth First Search
 - Breadth First Search
-- Djikstra's Algorithm
+- Dijkstra's Algorithm
 - Bellman-Ford
 - Floyd-Warshall
 - Topological Sort
